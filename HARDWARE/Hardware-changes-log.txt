@@ -1,0 +1,13 @@
+Log of hardware changes for ESP32-PoE-ISO
+
+Hardware revision C:
+---
+
+1. Improved a couple of footprints;
+2. R44, NA/R0402 - deleted to free up board space;
+3. Value of U9 changed from ESP-WROOM-32 to ESP32-WROOM-32D-4MB;
+
+Hardware revision B:
+---
+
+Initial release
