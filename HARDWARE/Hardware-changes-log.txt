@@ -1,13 +1,24 @@
-Log of hardware changes for ESP32-PoE-ISO
+Notable hardware changes for ESP32-PoE-ISO
+
+Hardware revision D:
+
+1. Added C31(1uF/10V/20%/X5R/C0603) to the ESP_EN pin;
+2. R32 changed from 470k/R0402 to 10k/R0402;
+3. R25 moved 25 mils away from the chip;
+4. R33 rotated and moved a away from the chip;
+5. C14 moved 15 mils away from the chip;
+6. CE sign added.
+
+---
 
 Hardware revision C:
----
 
 1. Improved a couple of footprints;
 2. R44, NA/R0402 - deleted to free up board space;
-3. Value of U9 changed from ESP-WROOM-32 to ESP32-WROOM-32D-4MB;
+3. Value of U9 changed from ESP-WROOM-32 to ESP32-WROOM-32D-4MB.
+
+---
 
 Hardware revision B:
----
 
 Initial release
