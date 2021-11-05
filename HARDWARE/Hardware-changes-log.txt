@@ -1,5 +1,91 @@
 Notable hardware changes for ESP32-PoE-ISO
 
+Hardware revision G1 (latest released revision):
+
+1. Added resistors R41 and R42(both 3.9k/R1206). Visible in the schematics.
+
+---
+
+Hardware revision G (major PoE redesign):
+
+1. The PoE chip Si3402-B-GM(QFN-20_5x5mm) changed with TPS2375PW(TSSOP-8) + TX4138(ESOIC-8)! Because of this change,
+many components are changed too:
+
+Deleted: U8, C12, C25, C26, R33, R34, R38, C29, L6, R41, R42, R43, R45, and C30
+
+In the schematic added the following components:
+
+470uF/10V/20%/Low_ESR/RM2.5/6.0x11mm as C26
+TX4138(ESOIC-8) as U5
+TPS2375PW(TSSOP-8) as U2
+56.2k/1%/R0402 as R38
+10.5k/1%/R0402 as R34
+4.7R/R0402 as R33
+0.03R/1%/R1206 as R28
+4.42k/1%/1/16W/R0402 as R27
+180k/1%/R0402 as R23
+24.9k/1%/R0402 as R22
+SMAJ58A/SMA as D10
+12pF/50V/5%/COG/C0402 as C25
+100nF/100V/20%/X7R/C1206 as C12
+
+2. Added 1, 2, 3, and 4 in the layers from top to bottom;
+3. Many references changed in size from 25x25mils to 30x30mils;
+4. T1's symbol changed with the real LMUN2211LT1G(SOT-23)'s symbol i.e. 10k/10k input divider;
+5. C12 and C24 changed from 100nF/100V/20%/X7R/C1206 to 100nF/100V/10%/X7R/C0603.
+
+---
+
+Hardware revision F  (internal, unreleased)
+
+1. RM2 moved 25mils away from U4; 
+2. C14 moved 25mils away from U4;
+3. C21 moved 30mils away from U4;
+4. R25 moved 35mils away from U4;
+5. C13 moved 38*5=190mils away from U4;
+6. C15 moved at direction X=12*5=60mils and Y=3*5=15mils away from U4;
+7. C16 moved 20mils away from U4;
+8. R26 moved 13*5=65mils away from U4;
+9. R33, C25 and C26 moved 40mils from U8;
+10. R38 moved 20mils away from U8;
+11. R34 moved 30mils away from U8;
+12. R41 moved 30mils away from U8;
+13. R42 moved 30mils away from U8 and rotated.
+
+---
+
+Hardware revision E (internal, unreleased):
+
+1. Added TVS1, ESDS314DBVR(SOT-23-5) to protect the Ethernet's PHY from ESD and other transient voltages;
+2. D8(SMBJ6.0A) inserted into the board, routed and changed to NA, i.e. NA(SMBJ6.0A);
+3. Local changes to ESP32-module pads;
+4. Spare2 now routed trough the top;
+5. C20 removed - value set to NA(1.0nF/3kV/10%/X7R/SMD/1808(VISHAY-VJ1808Y102KBHAT4X_Farnell-2407291));
+6. T1 value change in value from DTC114YKA(SOT-23) to LMUN2211LT1G(SOT-23);
+7. Added pads of TVS2 and TVS3, NA(GG0402052R542P), just in case
+
+---
+
+Hardware revision D3:
+
+1. C20 changed from 1.0nF/3kV/10%/X7R/SMD/1808(VISHAY-VJ1808Y102KBHAT4X_Farnell-2407291) to NA(1.0nF/3kV/10%/X7R/SMD/1808(VISHAY-VJ1808Y102KBHAT4X_Farnell-2407291));
+2. Soldered 2 x TVS-a, to protect TXP/TXN and RXP/RXN of LAN8710A from overvoltage - TVS1 and TVS2(GG0402052R542P);
+
+---
+
+Hardware revision D2 (released):
+
+1. Connected pins 7 and 8 of LAN connector togther with SHIELD pin. 
+2. Removed C20 - it is redundadnt. 
+
+---
+
+Hardware revision D1 (internal, unreleased):
+
+1. Tried to add D8(SMBJ6.0A) between +5V and GND of DCDC, as extra protection for LAN chip from voltage spikes. It doesn't help in the end, so it will no longer be placed.
+
+---
+
 Hardware revision D:
 
 1. Added C31(1uF/10V/20%/X5R/C0603) to the ESP_EN pin;
