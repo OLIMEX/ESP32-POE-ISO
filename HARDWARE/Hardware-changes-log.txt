@@ -1,6 +1,15 @@
 Notable hardware changes for ESP32-PoE-ISO
 
-Hardware revision H (latest released revision):
+
+Hardware revision I (latest released revision):
+
+---
+
+1. No significant changes to revision H, just PCB optimizations for improved manufacturing yield. 
+
+---
+
+Hardware revision H:
 
 1. R41(4.7k/R2512) now placed on the PCB.
 
