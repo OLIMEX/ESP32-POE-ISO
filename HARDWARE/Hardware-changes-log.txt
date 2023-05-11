@@ -1,5 +1,17 @@
 Notable hardware changes for ESP32-PoE-ISO
 
+Hardware revision L:
+
+---
+
+Overview: minor change
+
+Notable changes:
+
+1. U2 changed from TPS2376PW(TSSOP-8) to TPS2376D(SO-8), because of this, U2's package also changed from TSSOP-8 to SOIC-8_1.75mm;
+
+---
+
 Hardware revision K:
 
 ---
