@@ -1,5 +1,34 @@
 Notable hardware changes for ESP32-PoE-ISO
 
+Hardware revision M:
+
+---
+
+Overview: major changes
+
+Notable changes:
+
+1. The entire project was converted from KiCad5 to KiCad7!
+2. U3 value changed from BL4054B-42TPRN(SOT23-5) to TP4054-42-SOT25-R(SOT23-5);
+3. U7 changed from SY8089AAAC(SOT23-5) to TPS62A02ADRLR(SOT-563-6);
+4. Added C30 - NA(120pF/50V/5%/C0G/C0402);
+5. L2 changed from 2.2uH/1.5A/DCR=72mR/20%/3.00x3.00x1.50mm/CD32(NR3015T2R2M) to 1.0uH/4.2A/DCR=35mR/20%/2.00x1.60x1.00mm/L2016(PIM201610-1R0MTS00);
+6. U2 changed from TPS2376D(SO-8) to TPS2378DDAR(HSOIC-8);
+7. Deleted R27, 4.42k/1%/1/16W/R0402;
+8. R23 changed from 180k/1%/R0402 to 1.27k/1%/62.5mW/R0402;
+9. Deleted R43, 130k/R0402;
+10. Deleted R44, 10k/R0402;
+11. R41 value changed from 4.7k/R2512 to 9.1k/1W/R2512;
+12. R27, 9.1k/1W/R2512, was added in parallel to R41;
+13. Description for Rmps was added in the schematic;
+14. U1 was changed from CH340T(SSOP20W) to CH340X(MSOP-10);
+15. C4 and C5, 27pF/50V/5%/C0G/C0402, were deleted;
+16. Q1, Q12MHz/20pF/10ppm/4P/3.2x2.5mm, was deleted;
+17. Added R43, 4.7k/R0402;
+18. Several texts improved;
+19. U6's package was changed from "OLIMEX_Cases-FP:ESP32-WROVER(WROOM)-UNIVERSAL_MODULE" to "OLIMEX_Cases-FP:ESP32-WROVER_MODULE" for here the pads are corrected;
+20. All packages are with updated 3Ds to the ones in step format instead of wrl format.
+
 Hardware revision L:
 
 ---
