@@ -1,5 +1,17 @@
 Notable hardware changes for ESP32-PoE-ISO
 
+Hardware revision M1:
+
+---
+
+Overview: reliability improvements
+
+Notable changes:
+
+1. WPM2015-3/TR changed with IRLML6402TRPbF;
+
+2. Added D11-SMBJ5.0A as patch, this will increase reliability.
+
 Hardware revision M:
 
 ---
