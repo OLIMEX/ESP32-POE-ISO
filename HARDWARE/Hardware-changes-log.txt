@@ -1,5 +1,18 @@
 Notable hardware changes for ESP32-PoE-ISO
 
+Hardware revision N:
+
+---
+
+Overview: reliability improvements
+
+Notable changes:
+
+1. Added D11 to protect C26 (it was a hardware patch applied in M1, now fixed by design);
+2. Moved a couple of components to fit D11 - DCDC1, L4, C27, C26, R1, C19;
+3. Added R44(220R) between PG of the 3.3V regulator and ESP_EN so it works better at power up and reset, this was suggested by a customer;
+4. Moved U2 20mils towards the center of the board. Changed the placement of the isolated part of the circuit components to fit for the U2 new place.
+
 Hardware revision M1:
 
 ---
