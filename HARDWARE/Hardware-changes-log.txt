@@ -1,5 +1,15 @@
 Notable hardware changes for ESP32-PoE-ISO
 
+Hardware revision N1:
+
+---
+
+Overview: CH340X patch to prevent accidental overvoltage at reset. The board uses same PCB as revision N just has manually applied patch.
+
+Notable changes:
+
+1. Added a patch to prevent overvoltage of CH340 convertor. Added resistor 10k/1206 over the RXD pin of CH340 to GND. The patch is near D7.
+
 Hardware revision N:
 
 ---
