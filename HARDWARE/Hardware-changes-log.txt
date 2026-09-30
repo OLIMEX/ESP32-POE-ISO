@@ -1,5 +1,17 @@
 Notable hardware changes for ESP32-PoE-ISO
 
+
+Hardware revosopm O
+---
+
+1. Applied the patch from N1 (resistor 10k/1206 over the RXD pin of CH340 to GND);
+2. R45 now NA;
+3. FET1-FET3 now IRLML6402TRPBF-JSM;
+4. L4 changed to 33uH/2A/DCR=0.1R/FNR8040S330MT
+5. Removed D7 added FET4 instaed. R18 now 1k.
+
+---
+
 Hardware revision N1:
 
 ---
