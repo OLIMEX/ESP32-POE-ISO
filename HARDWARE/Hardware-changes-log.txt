@@ -1,7 +1,7 @@
 Notable hardware changes for ESP32-PoE-ISO
 
 
-Hardware revosopm O
+Hardware revision O
 ---
 
 1. Applied the patch from N1 (resistor 10k/1206 over the RXD pin of CH340 to GND);
